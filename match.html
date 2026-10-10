@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Résumé de match | THEORIA</title>
+  <meta name="description" content="Résumé de match THEORIA : moments clés, chiffres, xG, analyse et compositions.">
+  <meta name="theme-color" content="#111111">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/theoria.css">
+  <script>
+    (function (d) {
+      d.className = d.className.replace('no-js', 'js');
+      try { if (!sessionStorage.getItem('theoria-intro') && !matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('show-intro'); } catch (e) {}
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="match">
+  <a class="skip" href="#recit">Aller au résumé</a>
+  <div class="intro" data-intro aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header" data-chrome="header"></header>
+
+  <main id="main">
+    <section class="hero hero--match" data-hero data-theme-dark aria-label="Score et titre du match"></section>
+
+    <nav class="subnav" data-subnav aria-label="Sections du résumé"></nav>
+
+    <section class="section" id="recit" data-recit aria-label="Le résumé"></section>
+
+    <section class="moments" id="moments" data-moments aria-label="Moments clés"></section>
+
+    <section class="section stats" id="chiffres" data-stats aria-label="Le match en chiffres"></section>
+
+    <section class="manifesto" id="analyse" data-analyse data-theme-dark aria-label="Analyse"></section>
+
+    <section class="section" id="compos" data-compos aria-label="Compositions"></section>
+
+    <section class="section section--rail" data-rail-section aria-label="Les autres résumés"></section>
+  </main>
+
+  <footer class="site-footer" data-chrome="footer"></footer>
+
+  <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span></div>
+  <div class="cursor-label" aria-hidden="true"><span></span></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/model.js"></script>
+  <script src="assets/js/graphics.js"></script>
+  <script src="assets/js/motion.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/match.js"></script>
+</body>
+</html>

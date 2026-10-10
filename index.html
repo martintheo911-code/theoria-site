@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>THEORIA</title>
+  <meta name="description" content="THEORIA : des résumés de match qui expliquent le score. Moments clés, chiffres, xG et lecture tactique, chaque lendemain de match.">
+  <meta name="theme-color" content="#111111">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/theoria.css">
+  <script>
+    (function (d) {
+      d.className = d.className.replace('no-js', 'js');
+      try { if (!sessionStorage.getItem('theoria-intro') && !matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('show-intro'); } catch (e) {}
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="home">
+  <a class="skip" href="#main">Aller au contenu</a>
+  <div class="intro" data-intro aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header" data-chrome="header"></header>
+
+  <main id="main">
+    <section class="hero" data-hero data-theme-dark aria-label="Match à la une"></section>
+
+    <section class="ticker" data-ticker aria-label="Derniers résultats"></section>
+
+    <section class="section" id="a-la-une">
+      <div class="section__inner">
+        <header class="sec-head">
+          <div>
+            <p class="eyebrow">À la une</p>
+            <h2 class="sec-title" data-split>Les résumés de la semaine</h2>
+          </div>
+          <a class="link-arrow" href="#resumes"><span>Tous les résumés</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+        </header>
+      </div>
+      <div class="tiles" data-tiles></div>
+    </section>
+
+    <section class="moments" id="moments" data-moments aria-label="Moments clés du match à la une"></section>
+
+    <section class="section stats" id="chiffres" data-stats aria-label="Le match à la une en chiffres"></section>
+
+    <section class="section section--rail" id="resumes" data-rail-section aria-label="Tous les résumés"></section>
+
+    <section class="manifesto" id="theorie" data-theme-dark aria-labelledby="theorie-title">
+      <div class="manifesto__inner">
+        <p class="eyebrow eyebrow--light" id="theorie-title">La théorie</p>
+        <p class="manifesto__text" data-highlight>Un score ne dit jamais tout. THEORIA lit chaque match comme une démonstration : les moments qui le font basculer, les chiffres qui l’expliquent, et la structure que la caméra ne montre pas. Le résumé arrive le lendemain matin. La théorie, elle, reste.</p>
+        <ul class="pillars">
+          <li data-reveal="line" style="--i:0">
+            <h3>Les moments</h3>
+            <p>Les actions qui changent le match, remises dans l’ordre, minute par minute.</p>
+          </li>
+          <li data-reveal="line" style="--i:1">
+            <h3>Les chiffres</h3>
+            <p>Tirs, xG, possession : ce que le score ne dit pas, en une lecture.</p>
+          </li>
+          <li data-reveal="line" style="--i:2">
+            <h3>La lecture</h3>
+            <p>Le choix tactique qui explique le résultat, et pourquoi il a fonctionné.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="joueurs" aria-labelledby="joueurs-title">
+      <div class="section__inner">
+        <header class="sec-head">
+          <div>
+            <p class="eyebrow">Hommes du match</p>
+            <h2 class="sec-title" id="joueurs-title" data-split>Les joueurs de la semaine</h2>
+          </div>
+        </header>
+        <div class="players" data-players></div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+      <div class="newsletter__inner">
+        <h2 class="newsletter__title" id="newsletter-title" data-reveal="lines">
+          <span class="line"><span class="line__in" style="--i:0">Le résumé</span></span>
+          <span class="line"><span class="line__in" style="--i:1">avant le café</span></span>
+        </h2>
+        <div class="newsletter__body" data-reveal="up">
+          <p>Chaque lendemain de match, les résumés de la veille dans ta boîte mail : le score, les moments qui comptent, et le chiffre qui explique tout.</p>
+          <form class="nl-form" novalidate>
+            <label class="sr-only" for="nl-email">Adresse e-mail</label>
+            <input id="nl-email" class="nl-form__input" type="email" name="email" placeholder="nom@mail.fr" autocomplete="email" required>
+            <button class="btn" type="submit" data-magnetic="0.22"><span class="btn__roll"><span data-text="S’inscrire">S’inscrire</span></span></button>
+            <p class="nl-form__msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-chrome="footer"></footer>
+
+  <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span></div>
+  <div class="cursor-label" aria-hidden="true"><span></span></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/model.js"></script>
+  <script src="assets/js/graphics.js"></script>
+  <script src="assets/js/motion.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>
