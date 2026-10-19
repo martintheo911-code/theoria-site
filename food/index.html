@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="assets/css/food.css">
   <script>
     (function (d) {
-      d.className = d.className.replace('no-js', 'js');
+      d.classList.remove('no-js'); d.classList.add('js');
       try { if (!sessionStorage.getItem('food-intro') && !matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('show-intro'); } catch (e) {}
     })(document.documentElement);
   </script>
