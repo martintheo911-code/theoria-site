@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>FOOD, micro-ferme à Guînes</title>
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <meta name="description" content="FOOD, micro-ferme organique à Guînes : fruits et légumes de saison cultivés en traction asine, pour la biodiversité et pour une nourriture saine et locale. Producteur labellisé Nature & Progrès.">
+  <meta name="theme-color" content="#07503f">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta property="og:image" content="assets/img/logo-rond.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..600,0..100,0..1;1,9..144,100..600,0..100,0..1&family=Inter:wght@300..600&display=swap">
+  <link rel="stylesheet" href="assets/css/food.css">
+  <script>
+    (function (d) {
+      d.className = d.className.replace('no-js', 'js');
+      try { if (!sessionStorage.getItem('food-intro') && !matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('show-intro'); } catch (e) {}
+    })(document.documentElement);
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <div class="intro" data-intro aria-hidden="true">
+    <span class="intro__logo" data-logo><img src="assets/img/logo.svg" alt=""></span>
+    <p class="intro__line">La santé est dans l’assiette</p>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <div class="marquee" data-marquee>
+    <ul class="marquee__group">
+      <li>Producteur labellisé Nature &amp; Progrès</li>
+      <li>Traction asine</li>
+      <li>Fruits et légumes de saison</li>
+      <li>Micro-ferme organique à Guînes</li>
+      <li>La santé est dans l’assiette</li>
+    </ul>
+  </div>
+
+  <header class="header" data-header>
+    <div class="header__inner">
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="nav__link" href="#ferme">La ferme</a>
+        <a class="nav__link" href="#traction">Traction asine</a>
+        <a class="nav__link" href="#equipe">Nos ânes</a>
+        <a class="nav__link" href="#saisons">Saisons</a>
+        <a class="nav__link" href="#label">Le label</a>
+      </nav>
+      <a class="logo" href="#top" aria-label="FOOD, retour en haut de page">
+        <span class="logo__mark" data-logo><img src="assets/img/logo.svg" alt=""></span>
+      </a>
+      <div class="header__end">
+        <a class="btn btn--white btn--sm header__cta" href="#venir" data-magnetic>Nous trouver</a>
+        <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-burger>
+          <span class="burger__bar"></span><span class="burger__bar"></span>
+          <span class="sr-only">Ouvrir le menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" data-menu hidden>
+    <nav class="menu__nav" aria-label="Menu">
+      <a href="#ferme" style="--i:0">La ferme</a>
+      <a href="#traction" style="--i:1">Traction asine</a>
+      <a href="#equipe" style="--i:2">Nos ânes</a>
+      <a href="#saisons" style="--i:3">Saisons</a>
+      <a href="#label" style="--i:4">Le label</a>
+      <a href="#venir" style="--i:5">Nous trouver</a>
+    </nav>
+    <p class="menu__foot">1341 chemin du 2<sup>e</sup> Banc, 62340 Guînes · <a href="https://www.instagram.com/food_microferme/" target="_blank" rel="noopener">@food_microferme</a></p>
+  </div>
+
+  <main id="main">
+    <!-- Hero : la vidéo assets/video/ferme.mp4 remplace la photo dès qu’elle existe -->
+    <section class="hero" id="top" data-hero data-dark aria-labelledby="hero-title">
+      <div class="hero__frame">
+        <div class="hero__fields" aria-hidden="true" data-fields>
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="hero__veg" aria-hidden="true">
+          <span class="float" data-art="carotte" data-depth="0.6" style="--x:3%;--y:6%;--s:130px;--d:0s"></span>
+          <span class="float" data-art="tomate" data-depth="0.35" style="--x:47%;--y:3%;--s:96px;--d:-2s"></span>
+          <span class="float float--front" data-art="radis" data-depth="0.9" style="--x:89%;--y:70%;--s:120px;--d:-4s"></span>
+          <span class="float" data-art="potiron" data-depth="0.45" style="--x:1%;--y:74%;--s:150px;--d:-1s"></span>
+          <span class="float" data-art="pois" data-depth="0.7" style="--x:45%;--y:84%;--s:110px;--d:-3s"></span>
+          <span class="float float--front" data-art="betterave" data-depth="0.8" style="--x:56%;--y:12%;--s:96px;--d:-5s"></span>
+        </div>
+        <div class="hero__inner wrap">
+          <div class="hero__content">
+            <p class="eyebrow eyebrow--light" data-hero-in style="--i:0">Micro-ferme organique · Guînes</p>
+            <h1 class="hero__title" id="hero-title" data-split="chars">La santé est <em>dans l’assiette</em></h1>
+            <p class="hero__lede" data-hero-in style="--i:1">Des fruits et légumes de saison, cultivés au pas de l’âne pour la biodiversité et pour une nourriture saine, ici, à Guînes.</p>
+            <div class="hero__ctas" data-hero-in style="--i:2">
+              <a class="btn btn--white" href="#ferme" data-magnetic>Découvrir la ferme</a>
+              <a class="btn btn--ghost-light" href="#equipe" data-magnetic>Rencontrer nos ânes</a>
+            </div>
+          </div>
+          <figure class="hero__card" data-hero-card data-tilt data-cursor="Au champ">
+            <img class="hero__photo" src="assets/img/ane-et-paysan.jpg" alt="Au champ : un des ânes de la ferme attelé à un outil de travail du sol, avec le paysan de FOOD." width="844" height="1008" fetchpriority="high">
+            <video class="hero__video" muted loop playsinline preload="none" aria-hidden="true" data-hero-video>
+              <source src="assets/video/ferme.mp4" type="video/mp4">
+            </video>
+            <figcaption class="hero__tag"><span class="hero__tag-dot" aria-hidden="true"></span>Traction asine, sans moteur</figcaption>
+          </figure>
+        </div>
+        <a class="hero__scroll" href="#ferme" data-hero-in style="--i:3">
+          <span>Défiler pour explorer</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Manifeste : le texte s’allume mot à mot au scroll -->
+    <section class="manifesto" id="ferme" aria-label="La ferme">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal="up">La ferme</p>
+        <p class="manifesto__text" data-light>
+          FOOD est une ferme organique qui œuvre pour la biodiversité
+          <span class="inl media" data-media="fleur" data-tone="sage"><img src="assets/img/manifeste-biodiversite.jpg" alt="" loading="lazy"></span>.
+          Ici, pas de machine&nbsp;: ce sont nos ânes
+          <span class="inl media inl--photo" data-media="ane" data-tone="sky"><img src="assets/img/ane-et-paysan.jpg" alt="" loading="lazy"></span>
+          qui tirent les outils. Nous cultivons des fruits et légumes de saison
+          <span class="inl media" data-media="carotte" data-tone="peach"><img src="assets/img/manifeste-legumes.jpg" alt="" loading="lazy"></span>
+          pour offrir une nourriture saine à la population locale. Parce que la santé est dans l’assiette.
+        </p>
+      </div>
+    </section>
+
+    <!-- Engagements : tuiles pastel -->
+    <section class="section values" aria-labelledby="values-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <h2 class="sec-title" id="values-title" data-split>Une ferme vivante, de la terre à l’assiette</h2>
+          <p class="sec-lede" data-reveal="up">Quatre idées simples guident le travail de la ferme, du débroussaillage du terrain jusqu’à la dernière récolte.</p>
+        </header>
+        <div class="quilt">
+          <article class="qcard qcard--sage" data-tilt data-reveal="card" style="--i:0">
+            <span class="qcard__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path pathLength="1" d="M24 42V22M24 30c-8 0-14-6-14-14 8 0 14 6 14 14Zm0-6c0-8 6-14 14-14 0 8-6 14-14 14Z"/></svg></span>
+            <h3 class="qcard__title">Biodiversité</h3>
+            <p>Une ferme pensée pour la vie&nbsp;: le sol, les insectes, les oiseaux et les cultures avancent ensemble.</p>
+          </article>
+          <article class="qcard qcard--peach" data-tilt data-reveal="card" style="--i:1">
+            <span class="qcard__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path pathLength="1" d="M6 38h36M12 38l6-20h10l4 8h8l2 12M18 18l-2-8m12 8 2-8"/></svg></span>
+            <h3 class="qcard__title">Traction asine</h3>
+            <p>Pas de tracteur au champ. Benji et Téoula tirent les outils, sans moteur et sans bruit.</p>
+          </article>
+          <article class="qcard qcard--sky" data-tilt data-reveal="card" style="--i:2">
+            <span class="qcard__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path pathLength="1" d="M6 26h36a18 18 0 0 1-36 0Zm10-8c0-4 4-4 4-8m6 8c0-4 4-4 4-8"/></svg></span>
+            <h3 class="qcard__title">Santé</h3>
+            <p>La santé est dans l’assiette&nbsp;: des légumes de saison, cultivés sans produits chimiques de synthèse.</p>
+          </article>
+          <article class="qcard qcard--ash" data-tilt data-reveal="card" style="--i:3">
+            <span class="qcard__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path pathLength="1" d="M24 44s14-13 14-24a14 14 0 0 0-28 0c0 11 14 24 14 24Zm0-18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"/></svg></span>
+            <h3 class="qcard__title">Local</h3>
+            <p>Une nourriture saine pour la population locale&nbsp;: cultivée à Guînes, mangée tout près.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bandeau géant lié au scroll -->
+    <div class="bigline" aria-hidden="true" data-bigline>
+      <p class="bigline__row" data-speed="-0.4">Fruits · Légumes · De saison · Fruits · Légumes · De saison · Fruits · Légumes · De saison ·</p>
+      <p class="bigline__row bigline__row--outline" data-speed="0.4">Au pas de l’âne · Sans machine · Au pas de l’âne · Sans machine · Au pas de l’âne · Sans machine ·</p>
+    </div>
+
+    <!-- Traction asine : défilement horizontal épinglé, l’âne trace le sillon -->
+    <section class="furrow" id="traction" data-furrow data-dark aria-labelledby="traction-title">
+      <div class="furrow__pin">
+        <header class="furrow__head wrap">
+          <p class="eyebrow eyebrow--light" data-reveal="up">Traction asine</p>
+          <h2 class="furrow__title" id="traction-title" data-split>Ici, ce sont les ânes qui tirent</h2>
+        </header>
+        <div class="furrow__viewport">
+          <ol class="furrow__track" data-furrow-track>
+            <li class="step step--intro">
+              <figure class="step__photo media" data-media="attelage" data-tone="sage"><img src="assets/img/ane-et-paysan.jpg" alt="" loading="lazy"></figure>
+              <p>Au champ, pas de tracteur. Benji et Téoula tirent les outils, Philomène débroussaille&nbsp;: la ferme avance au rythme de l’animal.</p>
+            </li>
+            <li class="step">
+              <span class="step__art" data-art="branche"></span>
+              <span class="step__num">01</span>
+              <h3 class="step__title">Débroussailler</h3>
+              <p>Philomène ouvre le terrain&nbsp;: broussailles et herbes hautes laissent la place aux futures cultures.</p>
+            </li>
+            <li class="step">
+              <span class="step__art step__art--donkey" data-art="ane"></span>
+              <span class="step__num">02</span>
+              <h3 class="step__title">Travailler le sol</h3>
+              <p>Benji et Téoula tirent les outils dans les planches. Sans engin lourd, le sol reste vivant et moins tassé.</p>
+            </li>
+            <li class="step">
+              <span class="step__art" data-art="pois"></span>
+              <span class="step__num">03</span>
+              <h3 class="step__title">Semer et planter</h3>
+              <p>Chaque planche accueille les cultures de la saison. Le calendrier, c’est la nature qui le fixe.</p>
+            </li>
+            <li class="step">
+              <span class="step__art" data-art="carotte"></span>
+              <span class="step__num">04</span>
+              <h3 class="step__title">Récolter</h3>
+              <p>Des fruits et légumes de saison, récoltés pour nourrir sainement les habitants du territoire.</p>
+            </li>
+          </ol>
+        </div>
+        <div class="furrow__ground" aria-hidden="true">
+          <div class="furrow__sprouts" data-sprouts></div>
+          <div class="furrow__trail" data-trail></div>
+          <div class="furrow__donkey" data-donkey></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- L’équipe -->
+    <section class="section team" id="equipe" aria-labelledby="team-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow" data-reveal="up">L’équipe à quatre pattes</p>
+          <h2 class="sec-title" id="team-title" data-split>Benji, Téoula et Philomène</h2>
+          <p class="sec-lede" data-reveal="up">Sur la ferme, le travail du sol se fait sans moteur. Voici celles et ceux qui le font.</p>
+        </header>
+        <div class="team__grid">
+          <article class="pet" data-tilt data-reveal="card" style="--i:0">
+            <figure class="pet__media media" data-media="ane" data-tone="sky" data-cursor="Benji">
+              <img src="assets/img/benji.jpg" alt="Benji, l’un des deux ânes de la ferme" loading="lazy">
+            </figure>
+            <div class="pet__body">
+              <p class="pet__role">Traction</p>
+              <h3 class="pet__name">Benji</h3>
+              <p>Benji tire les outils dans les planches, pas à pas. Pas de moteur, pas de bruit&nbsp;: juste le rythme de la marche.</p>
+            </div>
+          </article>
+          <article class="pet" data-tilt data-reveal="card" style="--i:1">
+            <figure class="pet__media media" data-media="ane" data-tone="peach" data-cursor="Téoula">
+              <img src="assets/img/teoula.jpg" alt="Téoula, l’un des deux ânes de la ferme" loading="lazy">
+            </figure>
+            <div class="pet__body">
+              <p class="pet__role">Traction</p>
+              <h3 class="pet__name">Téoula</h3>
+              <p>Téoula fait équipe avec Benji. À deux, ils préparent le sol des cultures sans le tasser.</p>
+            </div>
+          </article>
+          <article class="pet" data-tilt data-reveal="card" style="--i:2">
+            <figure class="pet__media media" data-media="branche" data-tone="sage" data-cursor="Philomène">
+              <img src="assets/img/philomene.jpg" alt="Philomène au travail sur le terrain" loading="lazy">
+            </figure>
+            <div class="pet__body">
+              <p class="pet__role">Débroussaillage</p>
+              <h3 class="pet__name">Philomène</h3>
+              <p>Philomène travaille au sol et débroussaille le terrain. C’est par là que commence chaque nouvelle parcelle.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chiffres -->
+    <section class="counts" aria-label="La ferme en chiffres">
+      <div class="wrap counts__grid">
+        <div class="count" data-reveal="up" style="--i:0"><span class="count__n" data-count="2">2</span><span class="count__l">ânes de trait, Benji et Téoula</span></div>
+        <div class="count" data-reveal="up" style="--i:1"><span class="count__n" data-count="0">0</span><span class="count__l">tracteur au champ</span></div>
+        <div class="count" data-reveal="up" style="--i:2"><span class="count__n" data-count="0">0</span><span class="count__l">produit chimique de synthèse</span></div>
+        <div class="count" data-reveal="up" style="--i:3"><span class="count__n" data-count="100" data-suffix="&nbsp;%">100&nbsp;%</span><span class="count__l">fruits et légumes de saison</span></div>
+      </div>
+    </section>
+
+    <!-- Saisons : onglets, la saison en cours s’ouvre par défaut -->
+    <section class="seasons" id="saisons" data-seasons aria-labelledby="seasons-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow" data-reveal="up">Fruits et légumes de saison</p>
+          <h2 class="sec-title" id="seasons-title" data-split>Au rythme des saisons</h2>
+          <p class="sec-lede" data-reveal="up">Des repères de saison pour le nord de la France. Ce qui est prêt dépend de la météo et des cultures de l’année.</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Saisons" data-reveal="up">
+          <span class="tabs__pill" aria-hidden="true"></span>
+          <button class="tabs__btn" type="button" role="tab" id="tab-printemps" aria-controls="panel-printemps" aria-selected="false">Printemps</button>
+          <button class="tabs__btn" type="button" role="tab" id="tab-ete" aria-controls="panel-ete" aria-selected="false">Été</button>
+          <button class="tabs__btn" type="button" role="tab" id="tab-automne" aria-controls="panel-automne" aria-selected="false">Automne</button>
+          <button class="tabs__btn" type="button" role="tab" id="tab-hiver" aria-controls="panel-hiver" aria-selected="false">Hiver</button>
+        </div>
+
+        <div class="season" id="panel-printemps" role="tabpanel" aria-labelledby="tab-printemps" data-season="printemps" data-months="2,3,4" data-tone="sage" data-veg="radis">
+          <div class="season__art" aria-hidden="true"></div>
+          <div class="season__body">
+            <p class="season__months">Mars · Avril · Mai</p>
+            <h3 class="season__name">Printemps</h3>
+            <div class="season__group"><h4>Légumes</h4>
+              <ul class="chips"><li>Radis</li><li>Asperges</li><li>Épinards</li><li>Petits pois</li><li>Fèves</li><li>Laitues</li><li>Oignons nouveaux</li><li>Blettes</li></ul></div>
+            <div class="season__group"><h4>Fruits</h4>
+              <ul class="chips"><li>Fraises</li><li>Rhubarbe</li></ul></div>
+          </div>
+        </div>
+        <div class="season" id="panel-ete" role="tabpanel" aria-labelledby="tab-ete" data-season="ete" data-months="5,6,7" data-tone="sky" data-veg="tomate">
+          <div class="season__art" aria-hidden="true"></div>
+          <div class="season__body">
+            <p class="season__months">Juin · Juillet · Août</p>
+            <h3 class="season__name">Été</h3>
+            <div class="season__group"><h4>Légumes</h4>
+              <ul class="chips"><li>Tomates</li><li>Courgettes</li><li>Haricots verts</li><li>Concombres</li><li>Poivrons</li><li>Aubergines</li><li>Betteraves</li><li>Salades</li></ul></div>
+            <div class="season__group"><h4>Fruits</h4>
+              <ul class="chips"><li>Fraises</li><li>Framboises</li><li>Groseilles</li><li>Cerises</li></ul></div>
+          </div>
+        </div>
+        <div class="season" id="panel-automne" role="tabpanel" aria-labelledby="tab-automne" data-season="automne" data-months="8,9,10" data-tone="peach" data-veg="potiron">
+          <div class="season__art" aria-hidden="true"></div>
+          <div class="season__body">
+            <p class="season__months">Septembre · Octobre · Novembre</p>
+            <h3 class="season__name">Automne</h3>
+            <div class="season__group"><h4>Légumes</h4>
+              <ul class="chips"><li>Potirons</li><li>Potimarrons</li><li>Poireaux</li><li>Choux</li><li>Carottes</li><li>Betteraves</li><li>Céleris</li><li>Panais</li><li>Mâche</li></ul></div>
+            <div class="season__group"><h4>Fruits</h4>
+              <ul class="chips"><li>Pommes</li><li>Poires</li><li>Coings</li></ul></div>
+          </div>
+        </div>
+        <div class="season" id="panel-hiver" role="tabpanel" aria-labelledby="tab-hiver" data-season="hiver" data-months="11,0,1" data-tone="ash" data-veg="poireau">
+          <div class="season__art" aria-hidden="true"></div>
+          <div class="season__body">
+            <p class="season__months">Décembre · Janvier · Février</p>
+            <h3 class="season__name">Hiver</h3>
+            <div class="season__group"><h4>Légumes</h4>
+              <ul class="chips"><li>Poireaux</li><li>Choux</li><li>Carottes</li><li>Panais</li><li>Topinambours</li><li>Céleris-raves</li><li>Endives</li><li>Mâche</li><li>Radis noirs</li></ul></div>
+            <div class="season__group"><h4>Fruits</h4>
+              <ul class="chips"><li>Pommes de garde</li><li>Poires de garde</li></ul></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Récoltes : mosaïque en parallaxe -->
+    <section class="section harvest" id="recoltes" aria-labelledby="harvest-title">
+      <div class="wrap">
+        <header class="sec-head sec-head--row">
+          <div>
+            <p class="eyebrow" data-reveal="up">Les récoltes</p>
+            <h2 class="sec-title" id="harvest-title" data-split>De beaux légumes, cultivés sans chimie</h2>
+          </div>
+          <p class="sec-lede" data-reveal="up">Cultivés selon la charte Nature &amp; Progrès et récoltés à leur saison, pour la table des habitants d’ici.</p>
+        </header>
+      </div>
+      <div class="mosaic wrap">
+        <div class="mosaic__col" data-speed="0.06">
+          <figure class="tile media" data-media="carotte" data-tone="peach" data-cursor="Récolte" style="--ar:4/5"><img src="assets/img/recolte-1.jpg" alt="Carottes de la ferme" loading="lazy"><figcaption>Carottes</figcaption></figure>
+          <figure class="tile media" data-media="chou" data-tone="sage" data-cursor="Récolte" style="--ar:1/1"><img src="assets/img/recolte-2.jpg" alt="Chou de la ferme" loading="lazy"><figcaption>Choux</figcaption></figure>
+        </div>
+        <div class="mosaic__col" data-speed="-0.08">
+          <figure class="tile media" data-media="tomate" data-tone="sky" data-cursor="Récolte" style="--ar:1/1"><img src="assets/img/recolte-3.jpg" alt="Tomates de la ferme" loading="lazy"><figcaption>Tomates</figcaption></figure>
+          <figure class="tile media" data-media="poireau" data-tone="sage" data-cursor="Récolte" style="--ar:4/5"><img src="assets/img/recolte-4.jpg" alt="Poireaux de la ferme" loading="lazy"><figcaption>Poireaux</figcaption></figure>
+        </div>
+        <div class="mosaic__col" data-speed="0.12">
+          <figure class="tile media" data-media="betterave" data-tone="ash" data-cursor="Récolte" style="--ar:4/5"><img src="assets/img/recolte-5.jpg" alt="Betteraves de la ferme" loading="lazy"><figcaption>Betteraves</figcaption></figure>
+          <figure class="tile media" data-media="fraise" data-tone="peach" data-cursor="Récolte" style="--ar:1/1"><img src="assets/img/recolte-6.jpg" alt="Fraises de la ferme" loading="lazy"><figcaption>Fraises</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Label -->
+    <section class="label" id="label" data-dark aria-labelledby="label-title">
+      <div class="wrap label__grid">
+        <div class="label__intro">
+          <p class="eyebrow eyebrow--light" data-reveal="up">Le label</p>
+          <h2 class="label__title" id="label-title" data-split>Producteur labellisé Nature &amp; Progrès</h2>
+          <p class="label__text" data-reveal="up">La mention Nature &amp; Progrès repose sur une charte exigeante, qui va au-delà du cahier des charges bio européen, et sur un système participatif de garantie&nbsp;: producteurs et consommateurs visitent ensemble les fermes.</p>
+        </div>
+        <div class="badge" aria-hidden="true" data-badge>
+          <svg class="badge__ring" viewBox="0 0 200 200">
+            <defs><path id="badge-circle" d="M100 100m-78 0a78 78 0 1 1 156 0a78 78 0 1 1-156 0"/></defs>
+            <text><textPath href="#badge-circle" textLength="486" lengthAdjust="spacing">Nature &amp; Progrès · Traction asine · Guînes · </textPath></text>
+          </svg>
+          <span class="badge__core" data-art="pousse"></span>
+        </div>
+      </div>
+      <ul class="benefits wrap">
+        <li class="benefit" data-reveal="up" style="--i:0">
+          <span class="benefit__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path pathLength="1" d="M6 26 26 6M10 6h16v16"/></svg></span>
+          <div><h3>Sans chimie de synthèse</h3><p>Ni engrais ni pesticides de synthèse&nbsp;: la charte les exclut.</p></div>
+        </li>
+        <li class="benefit" data-reveal="up" style="--i:1">
+          <span class="benefit__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path pathLength="1" d="M4 22c6-4 18-4 24 0M4 27c6-4 18-4 24 0M16 18V6m0 4c-3 0-5-2-5-5 3 0 5 2 5 5Zm0 0c3 0 5-2 5-5-3 0-5 2-5 5Z"/></svg></span>
+          <div><h3>Un sol vivant</h3><p>Le sol est travaillé à la traction asine, sans engin qui le tasse.</p></div>
+        </li>
+        <li class="benefit" data-reveal="up" style="--i:2">
+          <span class="benefit__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path pathLength="1" d="M11 14a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm10 0a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM3 26c0-5 4-8 8-8s8 3 8 8m-4-7c2-1 4-1 6-1 4 0 8 3 8 8"/></svg></span>
+          <div><h3>Une garantie participative</h3><p>Producteurs et consommateurs contrôlent ensemble le respect de la charte.</p></div>
+        </li>
+        <li class="benefit" data-reveal="up" style="--i:3">
+          <span class="benefit__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path pathLength="1" d="M16 29s10-9 10-17a10 10 0 0 0-20 0c0 8 10 17 10 17Zm0-13a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/></svg></span>
+          <div><h3>Paysanne et locale</h3><p>Une agriculture à taille humaine, tournée vers les habitants du territoire.</p></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Nous trouver -->
+    <section class="section visit" id="venir" aria-labelledby="visit-title">
+      <div class="wrap visit__grid">
+        <div class="visit__card" data-reveal="card">
+          <p class="eyebrow">Nous trouver</p>
+          <h2 class="sec-title" id="visit-title" data-split>La ferme, à Guînes</h2>
+          <address class="visit__address">
+            <strong>FOOD</strong><br>
+            1341 chemin du 2<sup>e</sup> Banc<br>
+            62340 Guînes
+          </address>
+          <div class="visit__ctas">
+            <a class="btn btn--forest" href="https://www.google.com/maps/search/?api=1&amp;query=1341%20chemin%20du%202%C3%A8me%20Banc%2C%2062340%20Gu%C3%AEnes" target="_blank" rel="noopener" data-magnetic>Itinéraire</a>
+            <button class="btn btn--ghost" type="button" data-copy="1341 chemin du 2e Banc, 62340 Guînes" data-magnetic>Copier l’adresse</button>
+          </div>
+          <a class="insta" href="https://www.instagram.com/food_microferme/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            <span>Suivre la ferme sur Instagram <strong>@food_microferme</strong></span>
+          </a>
+          <p class="visit__msg" role="status" aria-live="polite"></p>
+        </div>
+        <div class="visit__map" aria-hidden="true" data-reveal="card" style="--i:1">
+          <div class="plots">
+            <span class="plot plot--sage"></span><span class="plot plot--peach"></span><span class="plot plot--moss"></span>
+            <span class="plot plot--sky"></span><span class="plot plot--bone"></span><span class="plot plot--sage"></span>
+            <span class="plot plot--peach"></span><span class="plot plot--moss"></span><span class="plot plot--sage"></span>
+          </div>
+          <span class="pin"><span class="pin__dot"></span><span class="pin__label">food</span></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" data-dark>
+    <div class="wrap footer__top">
+      <div class="footer__brand">
+        <a class="logo logo--footer" href="#top" aria-label="FOOD, retour en haut de page">
+          <span class="logo__mark" data-logo><img src="assets/img/logo.svg" alt=""></span>
+        </a>
+        <p class="footer__tag">La santé est dans l’assiette.</p>
+      </div>
+      <nav class="footer__col" aria-label="Plan du site">
+        <h2>La ferme</h2>
+        <a href="#ferme">Le projet</a>
+        <a href="#traction">Traction asine</a>
+        <a href="#equipe">Nos ânes</a>
+        <a href="#saisons">Fruits et légumes de saison</a>
+      </nav>
+      <div class="footer__col">
+        <h2>Nous trouver</h2>
+        <p>1341 chemin du 2<sup>e</sup> Banc<br>62340 Guînes</p>
+      </div>
+      <div class="footer__col">
+        <h2>Le label</h2>
+        <p>Producteur labellisé Nature &amp; Progrès<br>Traction asine</p>
+        <a class="footer__insta" href="https://www.instagram.com/food_microferme/" target="_blank" rel="noopener">Instagram · @food_microferme</a>
+      </div>
+    </div>
+    <div class="footer__giant" aria-hidden="true" data-footer-giant><span class="footer__logo" data-logo><img src="assets/img/logo.svg" alt=""></span></div>
+    <div class="wrap footer__bottom">
+      <p>© 2026 FOOD · Micro-ferme organique, Guînes</p>
+      <a href="#top" class="footer__top-link">Haut de page <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <div class="cursor" aria-hidden="true"><span class="cursor__ring"></span><span class="cursor__label"></span></div>
+
+  <script src="assets/js/art.js"></script>
+  <script src="assets/js/food.js"></script>
+</body>
+</html>

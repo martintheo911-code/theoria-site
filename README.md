@@ -4,6 +4,9 @@ Site de résumés de match : moments clés, chiffres, xG et lecture tactique.
 Site statique (HTML, CSS, JavaScript sans dépendance ni étape de build),
 directement publiable sur GitHub Pages.
 
+Le dossier [`food/`](food/README.md) contient un second site, indépendant :
+FOOD, micro-ferme organique à Guînes.
+
 ## Pages
 
 | Fichier | Contenu |
